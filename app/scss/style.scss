@@ -1,0 +1,18 @@
+@import '_vars';
+@import '_global';
+@import '_fonts';
+*,
+html{
+   box-sizing: border-box;
+}
+* {
+   margin: 0;
+   padding: 0;
+ }
+ body{
+     a{
+         color: black;
+     }
+ }
+
+ //start header
