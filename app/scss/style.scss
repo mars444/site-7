@@ -114,8 +114,11 @@ body {
         }
     }
     &-logo {
-        font-size: 48px;
-        color: $green;
+        a{
+            font-size: 48px;
+            color: $green;
+        }
+        
         span {
             color: #000;
         }
@@ -452,3 +455,57 @@ body {
     }
 }
 //end footer
+
+//start about.html
+//start section about
+
+.about{
+    background-color: $green;
+    &-inner{
+       display: flex;
+       justify-content: space-between;
+        align-items: center;
+    }
+    &-left{
+        color: white;
+        max-width: 60%;
+        padding: 250px 0;
+    }
+    &-title{
+        line-height: 60px;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+    &-text{
+        font-size: 20px;
+    }
+    &-img{
+      
+        img{
+            max-height: 500px !important;
+        }
+    }
+    &-right{
+        width: 40%;
+    }
+
+}
+//end section about
+
+
+//start section services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end about.html
