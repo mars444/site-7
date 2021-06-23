@@ -114,11 +114,11 @@ body {
         }
     }
     &-logo {
-        a{
+        a {
             font-size: 48px;
             color: $green;
         }
-        
+
         span {
             color: #000;
         }
@@ -351,75 +351,72 @@ body {
     }
 }
 
-
 //end section product
 
 //start footer
 
-.footer{
+.footer {
     background-color: $bg;
     padding-top: 40px;
-    a{
+    a {
         color: $gray;
         font-size: 16px;
         padding: 5px 0px;
-        transition: all .3s;
-        &:hover{
+        transition: all 0.3s;
+        &:hover {
             color: white;
         }
     }
-    &-top{
+    &-top {
         padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
     }
-    &__box{
+    &__box {
         width: 380px;
-        &-title{
+        &-title {
             font-size: 30px;
             color: $green;
             border-bottom: 1px solid #2d343f;
             margin-bottom: 15px;
         }
     }
-    &-center{
+    &-center {
         padding: 20px 0;
         border-top: 1px solid #2d343f;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    &-social{
-        &-link{
+    &-social {
+        &-link {
             position: relative;
             width: 50px;
             height: 50px;
             border-radius: 50%;
             background-color: transparent;
             border: 1px solid #2d343f;
-            transition: all .5s;
+            transition: all 0.5s;
             font-size: 25px !important;
             & + & {
                 margin-left: 10px;
             }
-            &:hover{
-             color: $bg !important;
-             background-color: white;
+            &:hover {
+                color: $bg !important;
+                background-color: white;
             }
-            &:before{
-                
-                transition: all .5s;
+            &:before {
+                transition: all 0.5s;
                 position: absolute;
                 transform: translate(-50%, -50%);
                 top: 50%;
                 left: 50%;
             }
         }
-
     }
-    &-subscribe{
+    &-subscribe {
         position: relative;
-        input{
+        input {
             outline: none;
             border: 1px solid #2d343f;
             height: 40px;
@@ -430,27 +427,27 @@ body {
             font-size: 18px;
             color: white;
         }
-        &-btn{
+        &-btn {
             cursor: pointer;
             height: 40px;
-            background-color:$green ;
+            background-color: $green;
             padding: 10px;
             color: white;
             font-size: 15px;
             border-radius: 10px;
         }
     }
-    &-bot{
-        background-color:#1d242d ;
-        &-inner{
+    &-bot {
+        background-color: #1d242d;
+        &-inner {
             height: 60px;
             align-items: center;
             display: flex;
             color: white;
         }
-        span{
-           border-bottom: 1px solid white;
-           margin-left: 5px;
+        span {
+            border-bottom: 1px solid white;
+            margin-left: 5px;
         }
     }
 }
@@ -459,53 +456,93 @@ body {
 //start about.html
 //start section about
 
-.about{
+.about {
     background-color: $green;
-    &-inner{
-       display: flex;
-       justify-content: space-between;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
-    &-left{
+    &-left {
         color: white;
         max-width: 60%;
         padding: 250px 0;
     }
-    &-title{
+    &-title {
         line-height: 60px;
         letter-spacing: 2px;
         font-size: 40px;
     }
-    &-text{
+    &-text {
         font-size: 20px;
     }
-    &-img{
-      
-        img{
+    &-img {
+        img {
             max-height: 500px !important;
         }
     }
-    &-right{
+    &-right {
         width: 40%;
     }
-
 }
 //end section about
 
-
 //start section services
+.services {
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 60px;
+    &-title {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    &-text{
+        max-width: 500px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__box{
+        & + & {
+            margin-left: 10px;
+        }
+        transition: all .5s;
+        position: relative;
+        width: 300px;
+        height: 200px;
+       
+        box-shadow: 0 0 5px rgb(192, 192, 145);
+        &:hover{
+            background-color: $green;
+            color: white;
+            .services-img{
+                color: white;
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        }
+        &-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+       
+    }
+    &-img{
+        transition: all .5s;
+        font-size: 50px;
+        color: $green;
+    }
+    &-name{
+        padding-top: 20px;
+        font-size: 18px;
+        width: 100%;
+    }
+}
 
 //end about.html
