@@ -223,3 +223,68 @@ body {
     }
 }
 // end zay slider
+
+
+//start section month
+
+
+.month{
+    padding-bottom: 80px;
+    &-inner{
+        text-align: center;
+    }
+    &-title{
+        font-size: 48px;
+        font-weight: 200;
+    }
+    &-text{
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    &__item{
+     
+        text-align: center;
+        &-img{
+            border-radius: 50%;
+            max-width: 340px;
+            max-height: 340px;
+            overflow: hidden;
+            img{
+                border-radius: 50%;
+                max-width: 340px;
+                max-height: 340px;
+                transition: all .5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+
+        }
+        &-name{
+            padding: 15px 0;
+            font-size: 22px;
+        }
+        &-link{
+            border-radius: 5px;
+            padding: 10px 15px;
+            background-color: $green;
+            color: white;
+            transition: all .5s;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+
+//end section month
