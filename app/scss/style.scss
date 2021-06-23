@@ -350,3 +350,105 @@ body {
 
 
 //end section product
+
+//start footer
+
+.footer{
+    background-color: $bg;
+    padding-top: 40px;
+    a{
+        color: $gray;
+        font-size: 16px;
+        padding: 5px 0px;
+        transition: all .3s;
+        &:hover{
+            color: white;
+        }
+    }
+    &-top{
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box{
+        width: 380px;
+        &-title{
+            font-size: 30px;
+            color: $green;
+            border-bottom: 1px solid #2d343f;
+            margin-bottom: 15px;
+        }
+    }
+    &-center{
+        padding: 20px 0;
+        border-top: 1px solid #2d343f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-social{
+        &-link{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #2d343f;
+            transition: all .5s;
+            font-size: 25px !important;
+            & + & {
+                margin-left: 10px;
+            }
+            &:hover{
+             color: $bg !important;
+             background-color: white;
+            }
+            &:before{
+                
+                transition: all .5s;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+
+    }
+    &-subscribe{
+        position: relative;
+        input{
+            outline: none;
+            border: 1px solid #2d343f;
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: transparent;
+            font-size: 18px;
+            color: white;
+        }
+        &-btn{
+            cursor: pointer;
+            height: 40px;
+            background-color:$green ;
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+    }
+    &-bot{
+        background-color:#1d242d ;
+        &-inner{
+            height: 60px;
+            align-items: center;
+            display: flex;
+            color: white;
+        }
+        span{
+           border-bottom: 1px solid white;
+           margin-left: 5px;
+        }
+    }
+}
+//end footer
