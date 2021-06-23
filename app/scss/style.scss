@@ -137,3 +137,89 @@ body {
         }
     }
 }
+//end header
+
+//start section zay__slider
+
+.zay__slider {
+    background-color: #efefef;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    &-item {
+        display: flex !important;
+        text-align: justify;
+        align-items: center;
+        &-left{
+            padding-left: 150px;
+            max-width: 50%;
+    
+        }
+        &-right{
+            max-width: 40%;
+        }
+        &-title {
+            font-size: 48px;
+            font-weight: 200;
+            span {
+                padding: 10px 0;
+                font-size: 20px;
+                font-weight: 300;
+                display: block;
+            }
+        }
+        &-text{
+            font-size: 20px;
+            font-weight: 200;
+        }
+        &-img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .slick_button{
+        background-color: transparent;
+        outline: none;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        color: $green;
+        transition: all .5s;
+        opacity: 0.5;
+        cursor: pointer;
+        z-index: 10;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .slick-next{
+        right: 15px;
+    }
+    .slick-prev{
+        left: 15px;
+    }
+    .slick-dots{
+        display: flex;
+       justify-content: center;
+       margin-left: 7px;
+        button{
+            display: inline-block;
+            font-size: 0px;
+            width: 30px;
+            height: 3px;
+            background: $green;
+            opacity: 0.5;
+            margin:  0 7px;
+            & + & {
+                
+            }
+        }
+        
+    }
+    .slick-active{
+        button{
+            opacity: 1;
+        }
+       
+    }
+}
+// end zay slider
