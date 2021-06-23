@@ -149,12 +149,11 @@ body {
         display: flex !important;
         text-align: justify;
         align-items: center;
-        &-left{
+        &-left {
             padding-left: 150px;
             max-width: 50%;
-    
         }
-        &-right{
+        &-right {
             max-width: 40%;
         }
         &-title {
@@ -167,77 +166,72 @@ body {
                 display: block;
             }
         }
-        &-text{
+        &-text {
             font-size: 20px;
             font-weight: 200;
         }
-        &-img{
+        &-img {
             max-width: 100%;
             height: auto;
         }
     }
-    .slick_button{
+    .slick_button {
         background-color: transparent;
         outline: none;
         font-size: 50px;
         position: absolute;
         top: 50%;
         color: $green;
-        transition: all .5s;
+        transition: all 0.5s;
         opacity: 0.5;
         cursor: pointer;
         z-index: 10;
-        &:hover{
+        &:hover {
             opacity: 1;
         }
     }
-    .slick-next{
+    .slick-next {
         right: 15px;
     }
-    .slick-prev{
+    .slick-prev {
         left: 15px;
     }
-    .slick-dots{
+    .slick-dots {
         display: flex;
-       justify-content: center;
-       margin-left: 7px;
-        button{
+        justify-content: center;
+        margin-left: 7px;
+        button {
             display: inline-block;
             font-size: 0px;
             width: 30px;
             height: 3px;
             background: $green;
             opacity: 0.5;
-            margin:  0 7px;
+            margin: 0 7px;
             & + & {
-                
             }
         }
-        
     }
-    .slick-active{
-        button{
+    .slick-active {
+        button {
             opacity: 1;
         }
-       
     }
 }
 // end zay slider
 
-
 //start section month
 
-
-.month{
+.month {
     padding-bottom: 80px;
-    &-inner{
+    &-inner {
         text-align: center;
     }
-    &-title{
+    &-title {
         font-size: 48px;
         font-weight: 200;
     }
-    &-text{
+    &-text {
         font-size: 18px;
         font-weight: 300;
         padding-bottom: 30px;
@@ -245,42 +239,39 @@ body {
         max-width: 650px;
         margin: 0 auto;
     }
-    &__items{
+    &__items {
         display: flex;
         justify-content: space-between;
-
     }
-    
-    &__item{
-     
+
+    &__item {
         text-align: center;
-        &-img{
+        &-img {
             border-radius: 50%;
             max-width: 340px;
             max-height: 340px;
             overflow: hidden;
-            img{
+            img {
                 border-radius: 50%;
                 max-width: 340px;
                 max-height: 340px;
-                transition: all .5s;
-                &:hover{
+                transition: all 0.5s;
+                &:hover {
                     transform: scale(1.2);
                 }
             }
-
         }
-        &-name{
+        &-name {
             padding: 15px 0;
             font-size: 22px;
         }
-        &-link{
+        &-link {
             border-radius: 5px;
             padding: 10px 15px;
             background-color: $green;
             color: white;
-            transition: all .5s;
-            &:hover{
+            transition: all 0.5s;
+            &:hover {
                 color: #000;
             }
         }
@@ -288,3 +279,74 @@ body {
 }
 
 //end section month
+
+//start section product
+
+.product {
+    padding-bottom: 50px;
+    padding-top: 60px;
+    text-align: center;
+    background-color: #e9eef5;
+    &-title {
+        font-size: 48px;
+        font-weight: 200;
+    }
+    &-text {
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 380px;
+        &-img {
+            max-width: 380px;
+            max-height: 285px;
+            img {
+                max-width: 380px;
+            }
+        }
+        &-content {
+            text-align: left;
+            background-color: white;
+            padding: 15px;
+            &-top {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &-name {
+            color: #5a6168;
+            font-size: 30px;
+            line-height: 50px;
+        }
+        &-text {
+            padding-bottom: 20px;
+            color: #949494;
+        }
+        &-rewiews {
+            font-size: 18px;
+            color: #c9adad;
+        }
+        &-price {
+            font-weight: 700;
+        }
+    }
+    .star-active {
+        color: rgb(253, 253, 0);
+    }
+    .star-noactive {
+        color: rgb(192, 192, 145);
+    }
+}
+
+
+//end section product
