@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/icons-fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header-contacts">
+                        <a href="mailto:petromars444@gmail.com" class="header-contacts-link fa  fa-envelope">
+                            petromars444@gmail.com
+                        </a>
+                        <a href="tel:+79251415930" class="header-contacts-link fa fa-phone ">
+                            +7 925 141 59 30
+                        </a>
+                    </div>
+                    <div class="header-social">
+                        <a class="fab fa-facebook" href="#"></a>
+                        <a class="fab fa-instagram" href="#"></a>
+                        <a class="fab fa-twitter" href="#"></a>
+                        <a class="fab fa-vk" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bot">
+            <div class="container">
+                <div class="header__bot-inner">
+                    <div class="header-logo logo">
+                        <a href="index.html"> Zay <span>Shop</span></a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#">
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__bot-icons">
+                        <div class="header__bot-search">
+                            <form action="" class="header__bot-search-form">
+                                <input type="text" placeholder="Search...">
+                            </form>
+                            <a href="#" class="header__bot-search-link fa fa-search">
+                            </a>
+                        </div>
+                        <div class="header__bot-cart">
+                            <a href="#" class="header__bot-cart-link fa fa-cart-arrow-down">
+                                <span class="cart-number">7</span>
+                            </a>
+                        </div>
+                        <div class="header__bot-user">
+                            <a href="#" class="header__bot-user-link fa fa-user">
+                                <span class="user-number">23</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="shop">
+        <div class="container">
+            <div class="shop-inner">
+                <div class="shop__left">
+                    <div class="shop__left-title">
+                        Categories
+                    </div>
+                    <ul class="categories-type">
+                        <li>
+                            <a class="categories-type-link" href="#">
+                                Gender
+                                <span class="fa fa-chevron-circle-down"></span>
+                            </a>
+                            <ul class="categories-type-list">
+                                <li>
+                                    <a href="#">
+                                        Men
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Women
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="categories-type-link">
+                                Sale
+                                <span class=" fa fa-chevron-circle-down"></span>
+                            </a>
+                            <ul class="categories-type-list">
+                                <li>
+                                    <a href="#">
+                                        Men
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Women
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="categories-type-link">
+                                Product
+                                <span class="fa fa-chevron-circle-down"></span>
+                            </a>
+                            <ul class="categories-type-list">
+                                <li>
+                                    <a href="#">
+                                        Men
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Women
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="shop__right">
+                    <div class="shop__right-top">
+                        <div class="shop__right-top-filters">
+                            <a class="shop__right-top-filters-link all-link " href="shop.html">
+                                All
+                            </a>
+                            <a class="shop__right-top-filters-link mens-link " href="shop-mens.html">
+                                Men's
+                            </a>
+                            <a class="shop__right-top-filters-link woomens-link " href="shop-woomen.html">
+                                Women's
+                            </a>
+                        </div>
+                        <div class="shop__right-top-search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div id="tab-all" class="shop__right__tab">
+                        <div class="shop__right__tab-item woomen">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_01.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item men">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_05.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item woomen">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_03.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item woomen">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_02.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item woomen">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_03.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item woomen">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_02.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_04.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_06.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_07.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_08.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_09.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                        <div class="shop__right__tab-item">
+                            <div class="product-img">
+                                <a href=""><img src="images/product_10.jpg" alt=""></a>
+                                <div class="product-bg">
+                                    <ul class="product-bg-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-name">
+                                Switer
+                            </div>
+                            <ul class="product-stars">
+                                <li>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-active fa fa-star"></i>
+                                    <i class="star-noactive fa fa-star"></i>
+                                </li>
+                                <li class="product-price">$950.00</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="shop-pages">
+                        <a class="shop-pages-link shop-pages-link-active" href="" class="page-1"><i>1</i></a>
+                        <a class="shop-pages-link" href="" class="page-2"><i>2</i></a>
+                        <a class="shop-pages-link" href="" class="page-3"><i>3</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brands">
+        <div class="container">
+        <div class="brands-title">
+            Our Brands
+        </div>
+        <div class="brands-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+        <div class="brands__slider">
+            <div class="brands__slider-item">
+               <a href="#"> <img src="images/brand_01.png" alt=""></a>
+            </div>
+            <div class="brands__slider-item">
+                <a href="#"></a> <img src="images/brand_02.png" alt=""></a>
+            </div>
+            <div class="brands__slider-item">
+                <a href="#">  <img src="images/brand_03.png" alt=""></a>
+            </div>
+            <div class="brands__slider-item">
+                <a href="#"></a> <img src="images/brand_04.png" alt=""></a>
+            </div>
+            <div class="brands__slider-item">
+                <a href="#"> <img src="images/brand_01.png" alt=""></a>
+             </div>
+             <div class="brands__slider-item">
+                 <a href="#"></a> <img src="images/brand_02.png" alt=""></a>
+             </div>
+             <div class="brands__slider-item">
+                 <a href="#">  <img src="images/brand_03.png" alt=""></a>
+             </div>
+             <div class="brands__slider-item">
+                 <a href="#"></a> <img src="images/brand_04.png" alt=""></a>
+             </div>
+        </div>
+    
+    </section>
+
+
+    
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer__box">
+                    <div class="footer__box-title">
+                        Zay Shop
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-item-link fa fa-map-marker-alt">
+                                123 Consectetur at ligula 10660
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="tel:+79251415930" class="footer__list-item-link fa fa-phone">
+                                +7-925-141-59-30
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="mailto:info@company.com" class="footer__list-item-link fa fa-envelope">
+                                info@company.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__box-title">
+                        Products
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Luxury
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Sport Wear
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Men's Shoes
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Women's Shoes
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Popular Dress
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Gym Accessories
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Sport Shoes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__box-title">
+                        Further Info
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Shop Locations
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                FAQs
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-item-link">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link fab fa-twitter"></a>
+                    <a href="#" class="footer-social-link fab fa-vk"></a>
+                    <a href="#" class="footer-social-link fab fa-facebook"></a>
+                    <a href="#" class="footer-social-link fab fa-instagram"></a>
+                </div>
+                <div class="footer-subscribe">
+                    <input type="text" placeholder="Your Email">
+                    <button class="footer-subscribe-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="footer-bot-inner">
+                    Copyright © 2021 Company Name | Designed by
+                    <span>
+                        <a href="">
+                            Template
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
