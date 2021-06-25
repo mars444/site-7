@@ -776,7 +776,7 @@ body {
                 filter: grayscale(100%);
                 opacity: 0.5;
                 transition: 0.5s;
-               
+
                 &:hover {
                     opacity: 1;
                     filter: none;
@@ -793,10 +793,112 @@ body {
         color: $gray;
         z-index: 5;
     }
-    .slick-next{
+    .slick-next {
         right: 0px;
     }
-    .slick-prev{
+    .slick-prev {
         left: 0px;
     }
+}
+
+//end section brands
+
+//end shop.html
+
+//start contact.html
+
+.contact {
+    &-titles-inner {
+        background-color: #e9eef5;
+    }
+    &-title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 60px;
+        padding-top: 50px;
+    }
+    &-text {
+        background-color: #e9eef5;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        max-width: 600px;
+        padding-bottom: 50px;
+    }
+    &__form {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 100px;
+        font-size: 30px;
+        input {
+            padding: 10px;
+            font-size: 18px;
+            height: 60px;
+            border: 1px solid #ced4da;
+            outline: none;
+
+            border-radius: 10px;
+        }
+        &-name,
+        &-email {
+            margin-bottom: 30px;
+            width: 50%;
+            input {
+                width: 100%;
+            }
+        }
+        &-email {
+            padding-left: 20px;
+        }
+        &-name {
+            padding-right: 20px;
+        }
+        &-subject,
+        &-message {
+            margin-bottom: 30px;
+            width: 100%;
+            input {
+                width: 100%;
+            }
+            &-email {
+                margin-left: 30px;
+            }
+            textarea {
+                border: 1px solid #ced4da;
+                width: 100%;
+                resize: none;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 18px;
+                outline: none;
+            }
+        }
+        &-btn {
+            margin-left: auto;
+            button {
+                cursor: pointer;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: $green;
+                color: white;
+                transition: all 0.5s;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+    h5 {
+        padding-bottom: 10px;
+    }
+    padding-bottom: 50px;
+}
+.contact-mail-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0px;
+    width: 100%;
 }
