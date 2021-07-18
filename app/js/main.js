@@ -12,6 +12,7 @@ $(function () {
     } else {
       header.removeClass('out');
     }
+
     scrollPrev = scrolled;
   });
 
@@ -99,6 +100,11 @@ $(function () {
 
 
 
+
+
+
+
+
   //cart
   const productsBtn = document.querySelectorAll('.cart__btn');
   const cartProductsList = document.querySelector('.cart-content__list');
@@ -106,9 +112,9 @@ $(function () {
   const cartQuantity = document.querySelector('.cart__quantity');
   const fullPrice = document.querySelector('.fullprice');
   let price = 0;
-   
 
- 
+
+
 
   const randomId = () => {
     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -139,11 +145,11 @@ $(function () {
     cartQuantity.textContent = cartProductsListtt;
     cartProductsListtt > 0 ? cart.classList.add('cart-active') : cart.classList.remove('cart-active');
 
-    
-   
+
+
   }
 
-printQuantity();
+  printQuantity();
 
 
   const generateCartProduct = (img, title, price, id) => {
@@ -166,14 +172,14 @@ printQuantity();
       ;
   }
 
- 
+
 
 
   const deleteProducts = (productParent) => {
-    console.log(productParent);
+    
     //get the id
     let id = productParent.querySelector('.cart-product').dataset.id;
-    console.log(id);
+   
 
     //disable false
 
@@ -191,10 +197,10 @@ printQuantity();
     // count and print quantity
     printQuantity();
 
-    if(cartQuantity.textContent == "0"){
+    if (cartQuantity.textContent == "0") {
       $(".cart__quantity").removeClass('cart__quantity-active');
       setInterval($(".cart-empty").removeClass('cart-empty-active'), 1000);
-      
+
     }
 
   }
@@ -207,7 +213,7 @@ printQuantity();
       let parent = self.closest('.shop__right__tab-item');
       let id = parent.dataset.id;
       let img = parent.querySelector('.product-img img').getAttribute('src');
-      let title = parent.querySelector('.product-text').textContent;
+      let title = parent.querySelector('.product-name').textContent;
       let priceNumber = parseInt(priceWithoutspaces(parent.querySelector('.product-price').textContent));
 
       $(".cart__quantity").addClass('cart__quantity-active');
@@ -234,16 +240,111 @@ printQuantity();
 
   cartProductsList.addEventListener('click', (e) => {
 
-    if(e.target.classList.contains('cart-product__delete')){
+    if (e.target.classList.contains('cart-product__delete')) {
       deleteProducts(e.target.closest('.cart-content__item'));
-    
+
     }
-    
+
 
 
   });
- 
-  
+
+
+
+  //likes
+  const likesBtn = document.querySelectorAll('.likes__btn');
+  const likesQuantity = document.querySelector('.likes__quantity');
+  const likes = document.querySelector('.likes');
+  const likesProductsList = document.querySelector('.likes-content__list');
+  const likesQuantityty = document.querySelector('.likes__quantity');
+  const likesPrice = document.querySelector('.product-price').textContent;
+
+  const printQuantityLikes = () => {
+    const likesProductsListtt = document.querySelectorAll('.likes-content__list li').length;
+    likesQuantityty.textContent = likesProductsListtt;
+    console.log(likesQuantityty);
+    likesProductsListtt > 0 ? likes.classList.add('likes-active') : likes.classList.remove('likes-active');
+  }
+
+
+
+  const deleteProductsLikes = (productParent) => {
+    //get the id
+    let idLike = productParent.querySelector('.likes-product').dataset.id;
+
+    //disable false
+
+    document.querySelector(`.shop__right__tab-item[data-id="${idLike}"]`).querySelector('.likes__btn').disabled = false;
+
+
+
+    //remove productParent
+    productParent.remove();
+    // count and print quantity
+    printQuantityLikes();
+
+    if (likesQuantity.textContent == "0") {
+      $(".likes__quantity").removeClass('likes__quantity-active');
+
+
+    }
+
+  }
+
+
+  likesBtn.forEach(el => {
+    el.closest('.shop__right__tab-item').setAttribute('data-id', randomId());
+    el.addEventListener('click', (e) => {
+
+      let self = e.currentTarget;
+      let parent = self.closest('.shop__right__tab-item');
+      let id = parent.dataset.id;
+      let img = parent.querySelector('.product-img img').getAttribute('src');
+      let title = parent.querySelector('.product-name').textContent;
+      let priceNumber = parent.querySelector('.product-price').textContent;
+
+      $(".likes__quantity").addClass('likes__quantity-active');
+
+      const generateLikesProduct = (img, title, price, id) => {
+        return `
+      <li class="likes-content__item">
+      <article class="likes-content__product likes-product" data-id="${id}" >
+        <img src="${img}" class="likes-product-img">
+          <div class="likes-product__text">
+            <h3 class="likes-product__title">
+            ${title}
+            </h3>
+            <span class="likes-product__price">${priceNumber}</span>
+          </div>
+          <button class="likes-product__delete far fa-trash-alt" aria-label="Удалить товар">
+          </button>
+       </article>
+        </li>
+         `
+          ;
+      }
+
+      //add to cart
+      likesProductsList.insertAdjacentHTML('afterbegin', generateLikesProduct(img, title, priceNumber, id));
+
+
+      //printt quantity
+      printQuantityLikes();
+      //disable btn
+      self.disabled = true;
+
+    });
+
+  });
+
+  likesProductsList.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('likes-product__delete')) {
+      deleteProductsLikes(e.target.closest('.likes-content__item'));
+
+    }
+  });
+
 
 
 });
