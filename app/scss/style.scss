@@ -11,6 +11,8 @@ html {
     padding: 0;
 }
 body {
+    padding-top: 120px;
+    overflow-anchor: none;
     a {
         color: black;
     }
@@ -20,9 +22,12 @@ body.lock {
 }
 
 //start header
-
 .header {
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 
     box-shadow: 0 0.5rem 1rem rgba(196, 170, 170, 0.15) !important;
     &__top {
@@ -129,7 +134,6 @@ body.lock {
                 right: -18px;
             }
         }
-       
     }
     &-logo {
         z-index: 5;
@@ -143,10 +147,49 @@ body.lock {
         }
     }
 }
-.cart{
+
+
+
+
+.cart {
     position: relative;
     margin: 0 15px;
-    &__quantity{
+    &:hover {
+        .cart-empty {
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 1s;
+            transition: all 0.5s;
+        }
+    }
+    &-active {
+        .cart-content {
+            opacity: 1;
+            visibility: visible;
+            transition: all 1s;
+        }
+    }
+
+    &-empty {
+        padding: 10px 0px;
+        border-radius: 10px;
+        background-color: $green;
+        color: white;
+      
+      
+        position: absolute;
+        right: 90px;
+        top: -10px;
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        text-align: center;
+        &-active {
+         display: none;
+        }
+    }
+    &__quantity {
+        display: none;
         position: absolute;
         background-color: $gray;
         padding: 5px 10px;
@@ -156,79 +199,107 @@ body.lock {
         text-align: center;
         top: -15px;
         right: -18px;
+        &-active {
+            display: block;
+        }
     }
-    &-content{
+    &-content {
+      
+        opacity: 0;
+        visibility: hidden;
         background-color: white;
-        border-radius: 10px;
+        margin-top: 23px;
         position: absolute;
-        right: 0;
-        width: 490px;
-        padding: 0 0px 20px 0;
-        margin-top: 50px;
+        right: -70px;
+        width: 450px;
+
         overflow: hidden;
-        &__list{
-        max-height: 400px;
-       overflow: auto;
+        &__list {
+            max-height: 250px;
+            overflow: auto;
         }
-        &__fullprice{
-           display: flex;
-           flex-direction: column;
+        &__fullprice {
+            display: flex;
+            flex-direction: column;
         }
-        &__bottom{
+        &__bottom {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:  0 10px;
+            padding: 10px 10px 10px 10px;
         }
-        &__btn{
+        &__btn {
+            cursor: pointer;
             padding: 10px 20px;
             background-color: yellow;
             font-size: 20px;
             border-radius: 10px;
+            &:disabled {
+                opacity: 0.1;
+                pointer-events: none;
+            }
         }
-        .fullprice{
+        .fullprice {
             font-weight: 700;
             padding-top: 5px;
             color: yellowgreen;
         }
-        
-        
+        ::-webkit-scrollbar {
+            width: 5px; /* ширина для вертикального скролла */
+            height: 3px; /* высота для горизонтального скролла */
+            background-color: $green;
+        }
+
+        /* ползунок скроллбара */
+        ::-webkit-scrollbar-thumb {
+            background-color: #843465;
+            border-radius: 9em;
+            box-shadow: inset 1px 1px 10px #f3faf7;
+            height: 5px;
+        }
     }
-    &-product{
+    &-product {
+        box-shadow: inset 1px 1px 10px $green;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-bottom: 20px;
-        border-bottom: 1px solid green;
-        &-img{
+
+        &-img {
             max-height: 150px;
             max-height: 150px;
             object-fit: cover;
+            display: block;
         }
-        &__title{
+        &__title {
             font-weight: 400;
             color: $gray;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 20px;
             margin-bottom: 15px;
         }
-        &__price{
+        &__price {
             font-size: 20px;
             font-weight: 700;
             color: red;
         }
-        &__delete{
-         font-size: 20px;
-         background-color: transparent;
-         color: rgb(170, 162, 162);
-         padding-right: 20px;
+        &__delete {
+            transition: all 0.5s;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: transparent;
+            color: rgb(170, 162, 162);
+            padding-right: 20px;
+            &:hover {
+                color: red;
+            }
         }
-        &__text{
+        &__text {
             padding: 0 15px;
             text-align: justify;
+            margin-right: auto;
         }
     }
-    
-    
 }
 .menu {
     &-icon {
@@ -268,7 +339,6 @@ body.lock {
 //start section zay__slider
 
 .zay__slider {
-  
     z-index: 0;
     background-color: #efefef;
     padding: 0 0 100px 0;
@@ -778,6 +848,8 @@ body.lock {
             flex-wrap: wrap;
 
             &-item {
+                min-width: 300px;
+                flex: 1 1 20%;
                 margin: 0 10px;
                 overflow: hidden;
                 margin-bottom: 30px;
@@ -869,8 +941,9 @@ body.lock {
         overflow: hidden;
         font-size: 0;
         img {
-            width: 300px;
+            width: 100%;
             display: block;
+            object-fit: cover;
         }
     }
     &-name {
@@ -881,6 +954,9 @@ body.lock {
     &-stars {
         text-align: center;
         padding-top: 20px;
+    }
+    &-text {
+        padding: 0 10px;
     }
     &-price {
         padding-top: 15px;
@@ -903,7 +979,8 @@ body.lock {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            a {
+            button {
+                cursor: pointer;
                 position: relative;
                 background-color: $green;
                 width: 50px;
@@ -914,6 +991,10 @@ body.lock {
                     i {
                         color: #000;
                     }
+                }
+                &:disabled {
+                    opacity: 0.4;
+                    pointer-events: none;
                 }
                 i {
                     position: absolute;
@@ -1472,6 +1553,13 @@ body.lock {
 @media screen and (min-width: 1001px) {
     .header.out {
         transform: translateY(-100%);
+        .cart-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .header {
+        transition: all 1s;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -1626,7 +1714,6 @@ body.lock {
         }
     }
 }
-
 
 @media screen and (max-width: 900px) {
     .contact__form {
