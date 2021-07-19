@@ -176,10 +176,10 @@ $(function () {
 
 
   const deleteProducts = (productParent) => {
-    
+
     //get the id
     let id = productParent.querySelector('.cart-product').dataset.id;
-   
+
 
     //disable false
 
@@ -344,6 +344,10 @@ $(function () {
 
     }
   });
+
+
+ 
+
 
 
 
