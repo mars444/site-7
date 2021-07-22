@@ -1,6 +1,11 @@
 $(function () {
 
 
+
+
+  
+
+
   var header = $('.header'),
     scrollPrev = 0;
 
@@ -77,6 +82,7 @@ $(function () {
     $(".menu-icon").addClass('menu-icon-active');
     $("body").addClass('lock');
     $(".menu-icon-close").addClass('menu-icon-close-active');
+    $(".header__bot-search ").removeClass('header__bot-search-active');
 
   })
 
@@ -344,10 +350,6 @@ $(function () {
 
     }
   });
-
-
- 
-
 
 
 

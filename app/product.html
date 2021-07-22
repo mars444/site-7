@@ -53,6 +53,7 @@
                         <i class="far fa-times-circle"></i>
                      </div>
                     <nav class="menu">
+                       
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a href="index.html">
@@ -63,6 +64,7 @@
                                 <a href="about.html">
                                     About
                                 </a>
+                            </li>
                       
                             <li class="menu__list-item">
                                 <a href="shop.html">
@@ -93,7 +95,13 @@
                     <div class="header__bot-icons">
                         <div class="header__bot-search">
                             <form action="" class="header__bot-search-form">
-                                <input type="text" placeholder="Search...">
+                                <div class="header__bot-search-form-input">
+                                    <input type="text" placeholder="Search...">
+                                <button class="search__btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                                </div>
+                                
                             </form>
                             <a href="#" class="header__bot-search-link fa fa-search">
                             </a>
@@ -316,7 +324,7 @@
                            <div class="zayproduct-quantity-text">Quantity:</div> 
                           
                                 <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"> <i>-</i> </button>
-                                <input type="number" min="0" max="12" value="1" readonly>
+                                <input type="number" min="1" max="99" value="1" readonly>
                                 <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"><i>+</i></button>
                            
                         </div>
