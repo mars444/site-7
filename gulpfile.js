@@ -69,13 +69,3 @@ gulp.task('watch', function(){
 gulp.task('default', gulp.parallel('style','script', 'sass', 'watch', 'browser-sync'))
 
 
-
-
-gulp.task('fileinclude', function() {
-  gulp.src(['index.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('./'));
-});
